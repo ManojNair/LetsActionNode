@@ -1,0 +1,13 @@
+# Write a gitignore file for Node App
+node_modules/
+npm-debug.log
+.DS_Store
+.env
+coverage
+dist
+build
+*.log
+*.log.*
+*.log-*
+*.log/*
+*.log-*/

@@ -1,0 +1,14 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch: # Manually run the workflow
+
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/workflows/node-ci-reusable.yml
+    with:
+      branches: main
